@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objectives & Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Objectives & Tasks</h1>
+    <a href="../index.html" class="home-button">🏠 Home</a>
+
+    <div class="container">
+        <div class="section">
+            <h2>Add Objective</h2>
+            <form id="objectiveForm">
+                <input type="text" id="objectiveInput" placeholder="Objective Name" required />
+                <button type="submit">Add Objective</button>
+            </form>
+            <ul id="objectiveList"></ul>
+        </div>
+
+        <div class="section">
+            <h2>Add Project</h2>
+            <form id="projectForm">
+                <select id="objectiveSelect"></select>
+                <input type="text" id="projectInput" placeholder="Project Name" required />
+                <button type="submit">Add Project</button>
+            </form>
+
+            <h2>Add Task</h2>
+            <form id="taskForm">
+                <select id="projectSelect"></select>
+                <input type="text" id="taskInput" placeholder="Task Name" required />
+                <input type="date" id="deadlineInput" required />
+                <button type="submit">Add Task</button>
+            </form>
+
+            <button id="downloadCSV">Download CSV</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
